@@ -4,11 +4,11 @@ VALUES  (001, "Marketing"),
         (003, "Sales");
 
 INSERT INTO role (id, title, salary, department_id)
-VALUES  (001, "Assistant", 45000, 001),
-        (002, "BLah", 55, 002),
-        (003, "dddddd", 456, 003);
+VALUES  (001, "Boogie Man", 45000, 001),
+        (002, "Scientist", 55, 002),
+        (003, "Security", 456, 003);
 
--- INSERT INTO employee (id, first_name, last_name, role_id, manager_id)
--- VALUES  (001, "hee"),
---         (002, ""),
---         (003, "");
+ INSERT INTO employee (id, first_name, last_name, role_id)
+ VALUES  (001, "John", "Wick", 001),
+         (002, "Jimmy", "Neutron", 002),
+         (003, "Shrek", "The Ogre", 003);
