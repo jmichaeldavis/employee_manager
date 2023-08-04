@@ -96,7 +96,6 @@ function displayMenu() {
   .then((data) => {
     if(data.menuChoice === "view all departments"){
       viewAllDepartments()
-      displayMenu()
     }
     if(data.menuChoice === "view all roles"){
       viewAllRoles()
@@ -157,7 +156,7 @@ function addDepartment() {
     }
   ])
   .then((data) => {
-    db.query(`INSERT INTO department VALUES ("${data.newDepartment}")`, function (err, results){
+    db.query(`INSERT INTO department (name) VALUES ("${data.newDepartment}")`, function (err, results){
       if (err) {
        console.log(err)
        return
